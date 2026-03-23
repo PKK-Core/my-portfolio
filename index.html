@@ -1,5 +1,189 @@
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pravin | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: calibri, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: hsl(197, 95%, 50%);
+            color: #333;
+        }
+
+        header {
+            background: #a9b631;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: #00adb5;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        #about {
+            text-align: center;
+        }
+
+        #about img {
+            width: 150px;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+
+        .Experience {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .Experience-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .Experience-card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #00adb5;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #008891;
+        }
+
+        @media(max-width: 600px){
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Pravin</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#Experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <img src="https://via.placeholder.com/150" alt="Profile Picture">
+    <p>Hello! 
+        Experienced Senior System Engineer with 9 years of expertise in desktop support, Windows Server, POS systems, SAP platform and VSAT technology. 
+        Proven track record in managing and maintaining IT infrastructure, resolving complex technical issues, and optimizing system performance. .</p>
+    <a href="#contact" class="btn">Contact Me</a>
+</section>
+
+<section id="Experience">
+    <h2>My Experience</h2>
+    <div class="Experience">
+        <div class="Experience-card">
+            <h3>Sr. IT Administrator</h3>
+            <p> 
+              <p>   • Leadership & Team Management: Leading IT team, overseeing daily operations, task allocations.</p>
+               <p>  • Technical expertise: Intune, Azure, Microsoft 365, Windows & Mac deployment, security tools.</p>
+               <p>  •  Compliance & process experience: ISO auditing, SOPs, documentation. </p>
+               <p>  •  Vendor & communication skills: procurement and coordination.
+            </p>
+        </div>
+        
+        <div class="Experience-card">
+            <h3>Management Information Systems Engineer </h3>
+            <p>
+               <p> • Installation and configuration of Information and data platforms like SAP and Tally. </p>
+                <p>• General desktop and server maintenance including installation and upgradation. 
+            </p>
+        </div>
+
+        <div class="Experience-card">
+            <h3>Senior System Engineer</h3>
+            <p>
+                <p>• Handled the POS systems procurement, initialization and deployment throughout their Chennai region. </p>
+                <p>• Managed the Windows server and client upgrades across stores.</p>
+            </p>
+        </div>
+
+        <div class="Experience-card">
+            <h3>Technical Engineer Assistant </h3>
+            <p>
+                <p>• Orchestrated server upgrades, installation of new systems including Windows/Linux desktop operating systems. </p>
+                <p>• V-SAT configuration for authenticated movie screenings and tokenization.</p>
+            </p>
+        </div>
+
+
+        <div class="Experience-card">
+            <h3>Experience Three</h3>
+            <p>Short description of your Experience goes here.</p>
+        </div>
+        
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: pravin@pkk.co.in</p>
+    <p>LinkedIn: linkedin.com/in/pravin-k-7218a7210/</p>
+</section>
+
+<footer>
+    <p>© 2026 Pravin | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
